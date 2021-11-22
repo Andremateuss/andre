@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h3 id="h3">LOGIN</h3>
+        <input id="email" type="text" name="email" placeholder="degite seu e-mail ...">
+        <input id="password" type="password" name="senha" placeholder="digite sua senha ..."><br>
+        <a href="cadastro.html"><input type="submit" name="acao" value="cadastre-se"></a>
+        <input type="submit" name="acao" value="entrar">
+        
+
+    </form>
+    <script>
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus',()=>{
+            email.style.borderColor = "rgb(95, 158, 160)";            
+        });
+        var email = document.getElementById('email');
+
+        email.addEventListener('blur',()=>{
+            email.style.borderColor = "#ccc";            
+        })
+        var password = document.getElementById('password');
+
+        password.addEventListener('focus',()=>{
+            password.style.borderColor = "rgb(95, 158, 160)";        
+        });
+        var password = document.getElementById('password');
+
+        password.addEventListener('blur',() => {
+            password.style.borderColor = "#ccc";        
+        });
+
+    </script>
+</body>
+</html>
